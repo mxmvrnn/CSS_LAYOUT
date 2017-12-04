@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height:100%;
+}
+    /* app */
+
+.appz{ /* контерйнер всего приложения */
+    width: 100%;
+    height: 100%;
+}
+
+    /* app-header */
+
+.app-header{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color:  #2f364a;
+    width: 100%;
+    height: 4.5%;
+
+}
+.header-link{
+    height: 100%;
+    padding: 50% 0%; 
+}
+
+.header-link a{     /* ссыллки в хедере */
+    flex-basis: 12%;
+    display: inline-block;
+    color:  rgba(120, 130, 157, 0.8);
+    font-size: 13px;
+    text-decoration: none;
+    height: 100%;  
+}
+.header-link a:hover{
+    flex-basis: 12%;
+    background-color:  #15a4fa;
+    display: inline-block;
+    color: white;
+    /* width: 100%;
+    height: 100%; */
+}
+
+.header-link a:first-child::after{     /* круг между ссылками */
+    content: "";
+    display: inline-block;    
+    border-radius: 50%;
+    background-color:  rgba(224, 228, 235, 0.75);
+    width: 4px;
+    height: 4px;
+    margin: 0 10px;    
+}
+
+/* app-content  */
+
+.app-content{
+    width: 100%;
+    height: 91%;
+   
+    
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    display: flex;	   
+}
+
+.main-content{
+    order: 2;
+    flex-basis: 85%;
+}
+
+.top-panel-bg{  /* top-panel-bg верхная панель */    
+    background-color:  #eef1f7;    
+    height: 7.1%;
+
+    font-family: ProximaNova;
+    color:  #444c63;
+    font-size: 22px;/* Приближение из-за подстановки шрифтов */
+    display: flex;
+    flex-direction: row;   
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #dadfea;
+        
+}
+
+.filtel-bg{ /* filtel-bg панель фильтqрации */  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color:  #eef1f7;    
+    height: 4.9%;
+    padding: 0 20px; 
+    border-bottom: 1px solid #dadfea;       
+}
+
+.filtel-bg input{
+    padding-left: 20px;
+    width: 35.71%;
+    height: 65.31%;
+    border: 1px solid rgba(140, 151, 178, 40);
+    background-color:  #ffffff;
+    border-radius: 10px;
+}
+
+.filter{
+    width: 50%;
+}
+
+.filter a{
+    margin-right: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color:  #8c97b2;
+    font-size: 16px;
+}
+
+.filter a:hover{
+    display: inline-block;    
+    color: white;
+    text-decoration: none;
+    background-color:  #97b3ce;
+    border-radius: 5px;
+}
+
+.filter-results{    /* див с книгами, получение результата на основе запроса фильтра */ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-content: flex-start;
+    align-items: flex-start;
+    
+    height: 87%;
+    background-color:  #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+    /****стили книг****/
+
+.book-cover{
+    border-radius: 4px;
+    background-color:  #97b3ce;
+    width: 200px;
+    height: 275px;    
+}
+
+[id^="book-cover"]{
+    margin: 10px 20px;    
+}
+
+.star-rating{   /* звездный рейтинг */
+	font-size: 0;
+}
+.star-rating__wrap{
+	display: inline-block;
+	font-size: 1rem;
+}
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.star-rating__ico{
+	float: right;
+	padding-left: 2px;
+	cursor: pointer;
+	color: #FFB300;
+}
+.star-rating__ico:last-child{
+	padding-left: 0;
+}
+.star-rating__input{
+	display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+	content: "\f005";
+}
+
+    /*  левая панель навигации*/
+
+.logout-panel{  /*  Общий контейнер навигации */
+    order: 1;    
+    flex-basis:15%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    align-content: space-between;
+    align-items: stretch;
+
+
+    width: 100%;
+    height: 100%;
+    min-height: 830px; 
+    background-color:  #1f2637;
+    /* overflow-y: auto;         */
+}
+
+.logout-panel-hr{
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color:  rgba(24, 30, 44, 0.8);
+}
+
+.add-btn{
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 15%;     
+}
+
+.btn{   /* кнопка добавления книг */
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 4px;
+    background-color:  #f2795a;
+    width: 60%;
+    height: 30%;
+    font-size: 14px;
+    color:  #ffffff;
+}
+
+
+.main-nav{  /* main-nav боковое меню/навигация */
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 22.22%;
+}
+
+.personal-categories{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 22.22%;
+}
+
+.history-list{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 17.33%;
+    padding: 10px 5px;
+}
+
+.logout-panel a { /* ссылочки бокового меню */
+font-family: ProximaNova;
+color:  #78829d;
+font-size: 13px;
+line-height: 26px;
+text-align: left;
+display: block;
+width: 100%;
+height: 38px;
+text-decoration: none;
+padding-left: 30%;
+}
+
+.fa-main-nav{
+    margin-right: 20px;
+}
+
+.logout-panel a:hover{
+    background-color:  #15a4fa;
+    width: 100%;
+    height: 38px;
+    color: white;
+}
+
+#personal-categories1::before{
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color:  #e64c66;
+    width: 6px;
+    height: 6px;
+}
+
+#personal-categories2::before{
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color:  #ffab00;
+    width: 6px;
+    height: 6px;
+}
+
+#personal-categories3::before{
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color:  #00bfdd;
+    width: 6px;
+    height: 6px;
+}
+
+#personal-categories4::before{
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color:  #7874cf;
+    width: 6px;
+    height: 6px;
+}
+
+[id^=history-time]{ /* история добавления книг */
+    display: block;
+    margin: 5px auto;
+    color:  #6f7d95;
+}
+
+#history-time .you-added{
+    display: block;    
+}
+
+
+    /* app-footer */ 
+
+.app-footer{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    
+    background-color:  #2f364a;
+    width: 100%;
+    height: 4.5%;
+}
+
+.footer-set{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+
+    height: 100%;
+    vertical-align: middle;
+    
+}
+
+.footer-set a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color:  #1f2637;
+    width: 55px ;
+    height: 100%;
+}
+
+
+
