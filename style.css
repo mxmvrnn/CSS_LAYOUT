@@ -33,11 +33,11 @@ html, body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
 
 
     height: 100%;
-    flex-basis: 12%;
+    flex-basis: 9%;
 }
 
 .header-link a{     /* ссыллки в хедере */
@@ -46,11 +46,11 @@ html, body{
     align-items: center;
 
 
-    color: white;
+    color: rgba(120, 130, 157, 0.8);
     font-size: 13px;
     text-decoration: none;
     background-color:  #2f364a;
-    padding: 0 10px;
+    padding: 0 5px;
     height: 100%;
 }
 .header-link a:hover{
@@ -63,16 +63,60 @@ html, body{
     font-size: 13px;
     text-decoration: none;
     background-color:  #15a4fa;
-    padding: 0 10px;
+    padding: 0 5px;
     height: 100%;
 }
 
 .circle-between{     /* круг между ссылками */   
     border-radius: 50%;
-    background-color:  rgba(224, 228, 235, 0.75);
+    background-color:  rgba(25, 32, 46, 0.75);
     width: 4px;
     height: 4px;
 }
+
+.avatar-background{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  #eef1f7;
+    box-sizing: border-box;
+    background-color:  #6eb5eb;
+    width: 32px;
+    height: 32px;
+}
+
+.using-online-bg{
+    height: 100%;
+    flex-basis: 7%;
+}
+
+.using-online-bg a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    color: rgba(120, 130, 157, 0.8);
+    font-size: 13px;
+    text-decoration: none;
+    background-color:  #2f364a;
+    height: 100%;
+}
+
+
+.using-online-bg a:hover{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    background-color:  #15a4fa;
+    height: 100%;
+}
+
 
 /* app-content  */
 
