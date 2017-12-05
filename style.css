@@ -30,35 +30,48 @@ html, body{
 
 }
 .header-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+
+
     height: 100%;
-    padding: 50% 0%; 
+    flex-basis: 12%;
 }
 
 .header-link a{     /* ссыллки в хедере */
-    flex-basis: 12%;
-    display: inline-block;
-    color:  rgba(120, 130, 157, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    color: white;
     font-size: 13px;
     text-decoration: none;
-    height: 100%;  
+    background-color:  #2f364a;
+    padding: 0 10px;
+    height: 100%;
 }
 .header-link a:hover{
-    flex-basis: 12%;
-    background-color:  #15a4fa;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
     color: white;
-    /* width: 100%;
-    height: 100%; */
+    font-size: 13px;
+    text-decoration: none;
+    background-color:  #15a4fa;
+    padding: 0 10px;
+    height: 100%;
 }
 
-.header-link a:first-child::after{     /* круг между ссылками */
-    content: "";
-    display: inline-block;    
+.circle-between{     /* круг между ссылками */   
     border-radius: 50%;
     background-color:  rgba(224, 228, 235, 0.75);
     width: 4px;
     height: 4px;
-    margin: 0 10px;    
 }
 
 /* app-content  */
@@ -68,7 +81,7 @@ html, body{
     height: 91%;
    
     
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: flex-start;
     flex-direction: row;
     /* align-items: flex-start; */
@@ -210,7 +223,8 @@ html, body{
 
     width: 100%;
     height: 100%;
-    min-height: 830px; 
+    min-width: 200px;
+    /* min-height: 830px;  */
     background-color:  #1f2637;
     /* overflow-y: auto;         */
 }
@@ -369,18 +383,33 @@ padding-left: 30%;
     flex-direction: row;
 
     height: 100%;
-    vertical-align: middle;
-    
 }
 
 .footer-set a{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
     color: white;
     text-decoration: none;
     background-color:  #1f2637;
     width: 55px ;
     height: 100%;
 }
+
+.footer-set a:hover{
+    background-color:  #15a4fa;
+    color: white;
+    width: 55px ;
+    height: 100%;
+    
+}
+
+
+
+
+
 
 
 
