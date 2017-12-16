@@ -1,3 +1,8 @@
+@font-face{    
+    font-family: 'ProximaNova';    
+    src: url('fonts/ProximaNovaRegular.otf');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +11,8 @@
 html, body{
     width: 100%;
     height:100%;
+    font-family: ProximaNova;
+    font-size: 10px;
 }
     /* app */
 
@@ -47,7 +54,7 @@ html, body{
 
 
     color: rgba(120, 130, 157, 0.8);
-    font-size: 13px;
+    font-size: 1.3em;
     text-decoration: none;
     background-color:  #2f364a;
     padding: 0 5px;
@@ -60,7 +67,7 @@ html, body{
 
 
     color: white;
-    font-size: 13px;
+    font-size: 1.3em;
     text-decoration: none;
     background-color:  #15a4fa;
     padding: 0 5px;
@@ -90,6 +97,8 @@ html, body{
     flex-basis: 7%;
 }
 
+.fa-chevron-circle-down{font-size: 1.3em}
+
 .using-online-bg a{
     display: flex;
     justify-content: space-around;
@@ -97,7 +106,7 @@ html, body{
 
 
     color: rgba(120, 130, 157, 0.8);
-    font-size: 13px;
+    font-size: 1.3em;
     text-decoration: none;
     background-color:  #2f364a;
     height: 100%;
@@ -111,7 +120,7 @@ html, body{
 
 
     color: white;
-    font-size: 13px;
+    font-size: 1.3em;
     text-decoration: none;
     background-color:  #15a4fa;
     height: 100%;
@@ -141,9 +150,8 @@ html, body{
     background-color:  #eef1f7;    
     height: 7.1%;
 
-    font-family: ProximaNova;
     color:  #444c63;
-    font-size: 22px;/* Приближение из-за подстановки шрифтов */
+    font-size: 2.2em;/* Приближение из-за подстановки шрифтов */
     display: flex;
     flex-direction: row;   
     justify-content: flex-start;
@@ -159,6 +167,7 @@ html, body{
     justify-content: space-between;
     align-items: center;
     
+    font-size: 1.2em;
     background-color:  #eef1f7;    
     height: 4.9%;
     padding: 0 20px; 
@@ -183,7 +192,7 @@ html, body{
     display: inline-block;
     text-decoration: none;
     color:  #8c97b2;
-    font-size: 16px;
+    font-size: 1.2em;
 }
 
 .filter a:hover{
@@ -217,9 +226,13 @@ html, body{
     height: 275px;    
 }
 
-[id^="book-cover"]{
+.book-content{
     margin: 10px 20px;    
 }
+
+.book-author{font-size: 1.2em}
+
+.book-name{font-size: 1.6em}
 
 .star-rating{   /* звездный рейтинг */
 	font-size: 0;
@@ -299,9 +312,11 @@ html, body{
     background-color:  #f2795a;
     width: 60%;
     height: 30%;
-    font-size: 14px;
+    font-size: 1.4em;
     color:  #ffffff;
 }
+
+
 
 
 .main-nav{  /* main-nav боковое меню/навигация */
@@ -311,7 +326,10 @@ html, body{
     align-items: center;
 
     flex-basis: 22.22%;
+    font-size: 1.3em;
 }
+
+.main-nav .fa{font-size: 1.4em}
 
 .personal-categories{
     display: flex;
@@ -320,6 +338,7 @@ html, body{
     align-items: center;
 
     flex-basis: 22.22%;
+    font-size: 1.3em;
 }
 
 .history-list{
@@ -332,10 +351,14 @@ html, body{
     padding: 10px 5px;
 }
 
+.history-time{font-size: 1.2em;}
+
+.time-ago{font-size: 1.2em;}
+
 .logout-panel a { /* ссылочки бокового меню */
 font-family: ProximaNova;
 color:  #78829d;
-font-size: 13px;
+font-size: 1.3em;
 line-height: 26px;
 text-align: left;
 display: block;
@@ -402,8 +425,10 @@ padding-left: 30%;
     color:  #6f7d95;
 }
 
-#history-time .you-added{
-    display: block;    
+.history-time {
+    display: block;
+    font-size: 1.2em; 
+    color:  #6f7d95;   
 }
 
 
@@ -428,6 +453,8 @@ padding-left: 30%;
 
     height: 100%;
 }
+
+.footer-set .fa {font-size: 1.6em}
 
 .footer-set a{
     display: flex;

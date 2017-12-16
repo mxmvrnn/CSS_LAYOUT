@@ -12,10 +12,10 @@
 <body>
     <div class="appz">   <!-- контерйнер всего приложения -->
 
-        <div class="addition-form"> <!-- Великая форма добавления книг -->
-            <input class="author-name" type="text" placeholder="Add author name">
-            <input class="book-name" type="text" placeholder="Add book name">
-            <input class="create-book" type="submit" value="Create book">        
+        <div id="add-form" class="addition-form"> <!-- Великая форма добавления книг -->
+            <input class="form-author-name" type="text" placeholder="Add author name">
+            <input class="form-book-name" type="text" placeholder="Add book name">
+            <input class="form-create-book" type="submit" value="Create book">        
         </div>
 
         <header class="app-header"> <!-- шапка со всем вытекающим -->
@@ -40,7 +40,7 @@
 
             <div class="logout-panel">  <!-- левая панель навигации -->
                 <div class="add-btn">
-                    <div class="btn">&#x271A Add a Book</div>
+                    <div id="add-book" class="btn">&#x271A Add a Book</div>
                 </div> 
                 
                 <hr class="logout-panel-hr">
@@ -66,7 +66,7 @@
                 <hr class="logout-panel-hr">
 
                 <div class="history-list">  <!-- История добавления книг -->
-                    <div id="history-time1">    <!-- История добавления отдельной книги по айдишнику -->
+                    <div class="history-time">    <!-- История добавления отдельной книги по айдишнику -->
                         <p class="you-added">
                             You added Fight Club by Chuck Palahniuk to your Must Read Title
                         </p>
@@ -75,7 +75,7 @@
                         </p>
                     </div>
                     
-                    <div id="history-time1">    <!-- История добавления отдельной книги по айдишнику -->
+                    <div class="history-time">    <!-- История добавления отдельной книги по айдишнику -->
                         <p class="you-added">
                             You added Fight Club by Chuck Palahniuk to your Must Read Title
                         </p>
@@ -102,10 +102,10 @@
                     </div> 
         
                     <div class="filter-results">
-                        <div id="book-cover1">
+                        <div class="book-content">
                             <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-1.png" alt=""></div>
                             <div class="book-name">Jewels of Nizam</div>
-                            <div class="bool-author">by Geeta Devi</div>
+                            <div class="book-author">by Geeta Devi</div>
                             <div class="book-rating">
                                 <div class="star-rating">
                                     <div class="star-rating__wrap">
@@ -123,10 +123,10 @@
                                   </div>
                             </div>
                         </div>
-                        <div id="book-cover2">
+                        <div class="book-content">
                                 <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-2.png" alt=""></div>
                                 <div class="book-name">Cakes & Bakes</div>
-                                <div class="bool-author">by Sanjeev Kapoor</div>
+                                <div class="book-author">by Sanjeev Kapoor</div>
                                 <div class="book-rating">
                                     <div class="star-rating">
                                         <div class="star-rating__wrap">
@@ -144,10 +144,10 @@
                                       </div>
                                 </div>
                         </div>
-                        <div id="book-cover3">
+                        <div class="book-content">
                             <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-3.png" alt=""></div>
                             <div class="book-name">Jamie's Kitchen</div>
-                            <div class="bool-author">by Jamie Oliver</div>
+                            <div class="book-author">by Jamie Oliver</div>
                             <div class="book-rating">
                                 <div class="star-rating">
                                     <div class="star-rating__wrap">
@@ -165,10 +165,10 @@
                                   </div>
                             </div>
                         </div>
-                        <div id="book-cover4">
+                        <div class="book-content">
                             <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-4.png" alt=""></div>
                             <div class="book-name">Inexpensive Family Meals</div>
-                            <div class="bool-author">by Simon Holst</div>
+                            <div class="book-author">by Simon Holst</div>
                             <div class="book-rating">
                                 <div class="star-rating">
                                     <div class="star-rating__wrap">
@@ -186,10 +186,10 @@
                                   </div>
                             </div>
                         </div>
-                        <div id="book-cover5">
+                        <div class="book-content">
                                 <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-5.png" alt=""></div>
                                 <div class="book-name">Paleo Slow Cooking</div>
-                                <div class="bool-author">by Chrissy Gower</div>
+                                <div class="book-author">by Chrissy Gower</div>
                                 <div class="book-rating">
                                     <div class="star-rating">
                                         <div class="star-rating__wrap">
@@ -207,10 +207,10 @@
                                       </div>
                                 </div>
                         </div>
-                        <div id="book-cover6">
+                        <div class="book-content">
                                 <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-6.png" alt=""></div>
                                 <div class="book-name">Cook Like an Italian</div>
-                                <div class="bool-author">by Tobie Puttock</div>
+                                <div class="book-author">by Tobie Puttock</div>
                                 <div class="book-rating">
                                     <div class="star-rating">
                                         <div class="star-rating__wrap">
@@ -228,10 +228,10 @@
                                       </div>
                                 </div>
                         </div>
-                        <div id="book-cover7">
+                        <div class="book-content">
                                 <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-7.png" alt=""></div>
                                 <div class="book-name">Suneeta Vaswani</div>
-                                <div class="bool-author">by Geeta Devi</div>
+                                <div class="book-author">by Geeta Devi</div>
                                 <div class="book-rating">
                                     <div class="star-rating">
                                         <div class="star-rating__wrap">
@@ -249,10 +249,10 @@
                                       </div>
                                 </div>
                         </div>
-                        <div id="book-cover8">
+                        <div class="book-content">
                                 <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-8.png" alt=""></div>
                                 <div class="book-name">Jamie Does</div>
-                                <div class="bool-author">by Jamie Oliver</div>
+                                <div class="book-author">by Jamie Oliver</div>
                                 <div class="book-rating">
                                     <div class="star-rating">
                                         <div class="star-rating__wrap">
@@ -270,10 +270,10 @@
                                       </div>
                                 </div>
                         </div>
-                        <div id="book-cover9">
+                        <div class="book-content">
                                 <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-9.png" alt=""></div>
                                 <div class="book-name">Jamie's italy</div>
-                                <div class="bool-author">by Jamie Oliver</div>
+                                <div class="book-author">by Jamie Oliver</div>
                                 <div class="book-rating">
                                     <div class="star-rating">
                                         <div class="star-rating__wrap">
@@ -291,10 +291,10 @@
                                       </div>
                                 </div>
                         </div>
-                        <div id="book-cover10">
+                        <div class="book-content">
                                 <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-10.png" alt=""></div>
                                 <div class="book-name">Vegetables Cookbook</div>
-                                <div class="bool-author">by Matthew Biggs</div>
+                                <div class="book-author">by Matthew Biggs</div>
                                 <div class="book-rating">
                                     <div class="star-rating">
                                         <div class="star-rating__wrap">
