@@ -502,7 +502,8 @@ padding-left: 30%;
     box-shadow: 0 0 5px 1000px rgba(114, 114, 114, 0.5);
 
 }
-.addition-form input:not(.create-book) {
+
+.addition-form input:not(.D:\git\CSSlayout\js\addBook.jsform-create-book){
     padding-left: 20px;
     width: 400px;
     height: 30px;
@@ -511,7 +512,8 @@ padding-left: 30%;
     border-radius: 10px;    
     font-size: 1.3em;
 }
-.create-book{
+
+.form-create-book{
     width: 150px;
     height: 40px;
     background-color:  #f2795a;
@@ -519,7 +521,7 @@ padding-left: 30%;
     border-radius: 10px;
     font-size: 1.3em;
     border: 0;
-}
+} 
 
 
 
