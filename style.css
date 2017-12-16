@@ -450,7 +450,49 @@ padding-left: 30%;
     
 }
 
+    /* Великие стили формы добавления книг */
 
+
+.addition-form{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    left: calc(50% - 250px);
+    top: calc(50% - 125px);
+    width: 500px;
+    height: 200px;
+    background-color:  #eef1f7;
+    border-top: 20px solid #2f364a;
+    border-bottom: 20px solid #2f364a;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 999;
+    box-shadow: 0 0 5px 1000px rgba(114, 114, 114, 0.5);
+
+}
+.addition-form input:not(.create-book) {
+    padding-left: 20px;
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgba(140, 151, 178, 40);
+    background-color:  #ffffff;
+    border-radius: 10px;    
+    font-size: 1.3em;
+}
+.create-book{
+    width: 150px;
+    height: 40px;
+    background-color:  #f2795a;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.3em;
+    border: 0;
+}
 
 
 
