@@ -45,6 +45,9 @@
         filterResults[0].appendChild(book);
         
         b.style.display = 'none';
+
+        addAuthorName[0].setAttribute(placeholder, "Add author name");
+        addBookName[0].setAttribute(placeholder, "Add book name");
     }  
 
     

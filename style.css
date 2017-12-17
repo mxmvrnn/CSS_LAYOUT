@@ -234,12 +234,14 @@ html, body{
 
 .book-name{font-size: 1.6em}
 
-.star-rating{   /* звездный рейтинг */
-	font-size: 0;
+    /* звездный рейтинг */
+
+.star-rating{   
+	font-size: 1.4em;
 }
 .star-rating__wrap{
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 1.4em;
 }
 .star-rating__wrap:after{
 	content: "";
@@ -503,7 +505,7 @@ padding-left: 30%;
 
 }
 
-.addition-form input:not(.D:\git\CSSlayout\js\addBook.jsform-create-book){
+.addition-form input:not(.form-create-book){
     padding-left: 20px;
     width: 400px;
     height: 30px;
