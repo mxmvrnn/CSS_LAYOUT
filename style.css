@@ -36,6 +36,9 @@ html, body{
     height: 4.5%;
 
 }
+
+.app-header .fa{font-size: 1.3em;}
+
 .header-link{
     display: flex;
     flex-direction: row;
@@ -44,7 +47,8 @@ html, body{
 
 
     height: 100%;
-    flex-basis: 9%;
+    width: 180px;
+    font-size: 1.3em
 }
 
 .header-link a{     /* ссыллки в хедере */
@@ -94,7 +98,8 @@ html, body{
 
 .using-online-bg{
     height: 100%;
-    flex-basis: 7%;
+    width: 130px;
+    font-size: 1.3em;
 }
 
 .fa-chevron-circle-down{font-size: 1.3em}
@@ -141,6 +146,8 @@ html, body{
     display: flex;	   
 }
 
+.app-content .fa{font-size: 1.4em;}
+
 .main-content{
     order: 2;
     flex-basis: 85%;
@@ -175,6 +182,7 @@ html, body{
 }
 
 .filtel-bg input{
+    font-size: 1.3em;
     padding-left: 20px;
     width: 35.71%;
     height: 65.31%;
@@ -193,6 +201,7 @@ html, body{
     text-decoration: none;
     color:  #8c97b2;
     font-size: 1.2em;
+    padding: 2px 5px;
 }
 
 .filter a:hover{
@@ -201,6 +210,7 @@ html, body{
     text-decoration: none;
     background-color:  #97b3ce;
     border-radius: 5px;
+    padding: 2px 5px;
 }
 
 .filter-results{    /* див с книгами, получение результата на основе запроса фильтра */ 
@@ -317,6 +327,8 @@ html, body{
     font-size: 1.4em;
     color:  #ffffff;
 }
+
+.btm .fa{font-size: 1.6em;}
 
 
 
