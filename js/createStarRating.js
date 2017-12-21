@@ -1,20 +1,11 @@
-// var booksElement = document.getElementById('books');
-var booksElement = document.getElementsByClassName('book-rating');
+(function name() {
+  var bookRating = document.getElementsByClassName('book-rating');
 
-/* var bookWrapper = document.createElement('div'),
-  bookAboutWrapper = document.createElement('div'),
-  rightsWrapper = document.createElement('div'); */
-
-/* bookWrapper.className = 'book';
-bookAboutWrapper.className = 'book-about';
-rightsWrapper.className = 'rights'; */
 var ratingWrapperContainer = document.createElement('div');
 ratingWrapperContainer.className = 'rating';
 
 var ratingWrapper = document.createElement('div');
 ratingWrapper.className = 'rating';
-
-
 
 for(var i = 5; i--;){
   var ratingItemWrapper = document.createElement('label');
@@ -23,18 +14,11 @@ for(var i = 5; i--;){
   ratingWrapper.appendChild(ratingItemWrapper);
 }
 
-/* bookAboutWrapper.appendChild(ratingWrapper);
-bookWrapper.appendChild(bookAboutWrapper);
-booksElement.appendChild(bookWrapper); */
 ratingWrapperContainer.appendChild(ratingWrapper)
 
-Array.prototype.forEach.call(booksElement, function(e) {
+Array.prototype.forEach.call(bookRating, function(e) {
   e.innerHTML = ratingWrapperContainer.innerHTML;
 });
-
-// booksElement[1].appendChild(ratingWrapper);
-
-
 
 setTimeout(function(){
   var rateContainer = document.getElementsByClassName('rating');
@@ -51,3 +35,4 @@ setTimeout(function(){
     })
   })
 }, 1000)
+}())

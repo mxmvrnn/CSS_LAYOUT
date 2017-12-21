@@ -1,5 +1,6 @@
 
 
+
 (function () { /* Всплывающее окошко при на нажатии на 'Add a Book' */
     // в этой задаче неважно, как именно прятать элемент
         // например через style.display:
@@ -35,16 +36,21 @@
         bookAuthorName.className = 'book-author';
         bookAuthorName.innerHTML = addAuthorName[0].value;
 
+        var bookRating = document.createElement('div');
+        bookRating.className = 'book-rating';
+
         
         var book = document.createElement('div');
         book.className = 'book-content';
         book.appendChild(bookCover);
         book.appendChild(bookName);
         book.appendChild(bookAuthorName);
+        book.appendChild(bookRating);
 
         filterResults[0].appendChild(book);
         
         b.style.display = 'none';
+       
 
         addAuthorName[0].setAttribute(placeholder, "Add author name");
         addBookName[0].setAttribute(placeholder, "Add book name");
