@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/855a87403c.js"></script>
+</head>
+<body>
+    <div class="appz">   <!-- контерйнер всего приложения -->
+
+        <div id="add-form" class="addition-form"> <!-- Великая форма добавления книг -->
+            <input class="form-author-name" type="text" placeholder="Add author name">
+            <input class="form-book-name" type="text" placeholder="Add book name">
+            <input class="form-create-book" type="submit" value="Create book">        
+        </div>
+
+        <header class="app-header"> <!-- шапка со всем вытекающим -->
+            <div class="header-link">
+                <a href="">Help Center </a>
+                <div class="circle-between"></div>
+                <a href="">Our Support</a>
+            </div>
+            <div class="using-online-bg">
+                
+                <a href="">
+                    <div class="avatar-background">
+                        <img src="images/App-Content/App-Header-links/avatar-01.png" alt="">
+                    </div>
+                    John Doe
+                    <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </a>
+
+            </div>
+        </header>
+        <div class="app-content">   <!-- огромный див с контентом -->
+
+            <div class="logout-panel">  <!-- левая панель навигации -->
+                <div class="add-btn">
+                    <div id="add-book" class="btn">&#x271A Add a Book</div>
+                </div> 
+                
+                <hr class="logout-panel-hr">
+
+                <div class="main-nav"> <!-- main nav основная навигация -->
+                    <a href="" id="main-nav1"><i class="fa fa-main-nav fa-book"></i> Now Readin</a>
+                    <a href="" id="main-nav2"><i class="fa fa-main-nav fa-globe"></i> Browse</a>
+                    <a href="" id="main-nav3"><i class="fa fa-main-nav fa-shopping-cart"> </i>  Bay Books</a>
+                    <a href="" id="main-nav4"><i class="fa fa-main-nav fa-star"></i> Favorite Books</a>
+                    <a href="" id="main-nav5"><i class="fa fa-main-nav fa-th-list"></i> Wishlist</a>
+                    <a href="" id="main-nav6"><i class="fa fa-main-nav fa-clock-o"></i> History</a>  
+                </div>
+                
+                <hr class="logout-panel-hr">
+
+                <div class="personal-categories"> <!-- personal-categories категории ваших книг -->
+                    <a href="" id="personal-categories1">Must Read Tttles</a>
+                    <a href="" id="personal-categories2">Best Of List</a>
+                    <a href="" id="personal-categories3">Classic Novels</a>
+                    <a href="" id="personal-categories4">Non Fiction</a>
+                </div>  
+                
+                <hr class="logout-panel-hr">
+
+                <div class="history-list">  <!-- История добавления книг -->
+                    <div class="history-time">    <!-- История добавления отдельной книги по айдишнику -->
+                        <p class="you-added">
+                            You added Fight Club by Chuck Palahniuk to your Must Read Title
+                        </p>
+                        <p class="time-ago">
+                            24 minutes ago
+                        </p>
+                    </div>
+                    
+                    <div class="history-time">    <!-- История добавления отдельной книги по айдишнику -->
+                        <p class="you-added">
+                            You added Fight Club by Chuck Palahniuk to your Must Read Title
+                        </p>
+                        <p class="time-ago">
+                            48 minutes ago
+                        </p>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="main-content">
+                    <div class="top-panel-bg">Browse Available Books</div>
+                
+                    <div class="filtel-bg">
+                        <div class="filter">
+                            <a href="" id="filter-set1">All Books</a>
+                            <a href="" id="filter-set2">Most Recent</a>
+                            <a href="" id="filter-set3">Most Popular</a>
+                            <a href="" id="filter-set4">Free Books</a>
+                        </div>
+
+                        <input id="book-search" type="text" placeholder="Enter Keywords">                         
+                        
+                    </div> 
+        
+                    <div class="filter-results">
+                        <div class="book-content">
+                            <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-1.png" alt=""></div>
+                            <div class="book-name">Jewels of Nizam</div>
+                            <div class="book-author">by Geeta Devi</div>
+                            <div class="book-rating">
+                                
+                            </div>
+                        </div>
+                        <div class="book-content">
+                                <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-2.png" alt=""></div>
+                                <div class="book-name">Cakes & Bakes</div>
+                                <div class="book-author">by Sanjeev Kapoor</div>
+                                <div class="book-rating">
+                                    <div class="star-rating">
+                                       
+                                      </div>
+                                </div>
+                        </div>
+                        <div class="book-content">
+                            <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-3.png" alt=""></div>
+                            <div class="book-name">Jamie's Kitchen</div>
+                            <div class="book-author">by Jamie Oliver</div>
+                            <div class="book-rating">
+                                <div class="star-rating">
+                                    
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="book-content">
+                            <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-4.png" alt=""></div>
+                            <div class="book-name">Inexpensive Family Meals</div>
+                            <div class="book-author">by Simon Holst</div>
+                            <div class="book-rating">
+                                <div class="star-rating">
+                                    
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="book-content">
+                                <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-5.png" alt=""></div>
+                                <div class="book-name">Paleo Slow Cooking</div>
+                                <div class="book-author">by Chrissy Gower</div>
+                                <div class="book-rating">
+                                    <div class="star-rating">
+                                        
+                                      </div>
+                                </div>
+                        </div>
+                        <div class="book-content">
+                                <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-6.png" alt=""></div>
+                                <div class="book-name">Cook Like an Italian</div>
+                                <div class="book-author">by Tobie Puttock</div>
+                                <div class="book-rating">
+                                    <div class="star-rating">
+                                        
+                                      </div>
+                                </div>
+                        </div>
+                        <div class="book-content">
+                                <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-7.png" alt=""></div>
+                                <div class="book-name">Suneeta Vaswani</div>
+                                <div class="book-author">by Geeta Devi</div>
+                                <div class="book-rating">
+                                    <div class="star-rating">
+                                       
+                                      </div>
+                                </div>
+                        </div>
+                        <div class="book-content">
+                                <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-8.png" alt=""></div>
+                                <div class="book-name">Jamie Does</div>
+                                <div class="book-author">by Jamie Oliver</div>
+                                <div class="book-rating">
+                                    <div class="star-rating">
+                                       
+                                      </div>
+                                </div>
+                        </div>
+                        <div class="book-content">
+                                <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-9.png" alt=""></div>
+                                <div class="book-name">Jamie's italy</div>
+                                <div class="book-author">by Jamie Oliver</div>
+                                <div class="book-rating">
+                                    <div class="star-rating">
+                                        
+                                      </div>
+                                </div>
+                        </div>
+                        <div class="book-content">
+                                <div class="book-cover"><img src="images\App-Content\Filter-Results\book-cover\book-cover-10.png" alt=""></div>
+                                <div class="book-name">Vegetables Cookbook</div>
+                                <div class="book-author">by Matthew Biggs</div>
+                                <div class="book-rating">
+                                    <div class="star-rating">
+                                       
+                                      </div>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+            
+        </div> 
+        <footer class="app-footer">
+            <div class="footer-set">
+                <a href="" class="app-support"><i class="fa footer fa-question-circle"></i></a>
+                <a href="" class="app-set"><i class="fa footer fa-cog"></i></a>
+            </div>    
+        </footer> <!-- подвал -->
+
+        
+    </div>
+  
+   <script src="js/addBook.js"></script>
+   <script src="js/searchBook.js"></script> 
+   <script src="js/createStarRating.js"></script> 
+</body>
+</html>

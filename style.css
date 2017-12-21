@@ -1,0 +1,521 @@
+@font-face{    
+    font-family: 'ProximaNova';    
+    src: url('fonts/ProximaNovaRegular.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height:100%;
+    font-family: ProximaNova;
+    font-size: 10px;
+}
+    /* app */
+
+.appz{ /* контерйнер всего приложения */
+    width: 100%;
+    height: 100%;
+}
+
+    /* app-header */
+
+.app-header{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color:  #2f364a;
+    width: 100%;
+    height: 4.5%;
+
+}
+.header-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+    height: 100%;
+    flex-basis: 9%;
+}
+
+.header-link a{     /* ссыллки в хедере */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    color: rgba(120, 130, 157, 0.8);
+    font-size: 1.3em;
+    text-decoration: none;
+    background-color:  #2f364a;
+    padding: 0 5px;
+    height: 100%;
+}
+.header-link a:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    background-color:  #15a4fa;
+    padding: 0 5px;
+    height: 100%;
+}
+
+.circle-between{     /* круг между ссылками */   
+    border-radius: 50%;
+    background-color:  rgba(25, 32, 46, 0.75);
+    width: 4px;
+    height: 4px;
+}
+
+.avatar-background{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  #eef1f7;
+    box-sizing: border-box;
+    background-color:  #6eb5eb;
+    width: 32px;
+    height: 32px;
+}
+
+.using-online-bg{
+    height: 100%;
+    flex-basis: 7%;
+}
+
+.fa-chevron-circle-down{font-size: 1.3em}
+
+.using-online-bg a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    color: rgba(120, 130, 157, 0.8);
+    font-size: 1.3em;
+    text-decoration: none;
+    background-color:  #2f364a;
+    height: 100%;
+}
+
+
+.using-online-bg a:hover{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    background-color:  #15a4fa;
+    height: 100%;
+}
+
+
+/* app-content  */
+
+.app-content{
+    width: 100%;
+    height: 91%;
+   
+    
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    display: flex;	   
+}
+
+.main-content{
+    order: 2;
+    flex-basis: 85%;
+}
+
+.top-panel-bg{  /* top-panel-bg верхная панель */    
+    background-color:  #eef1f7;    
+    height: 7.1%;
+
+    color:  #444c63;
+    font-size: 2.2em;/* Приближение из-за подстановки шрифтов */
+    display: flex;
+    flex-direction: row;   
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #dadfea;
+        
+}
+
+.filtel-bg{ /* filtel-bg панель фильтqрации */  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-size: 1.2em;
+    background-color:  #eef1f7;    
+    height: 4.9%;
+    padding: 0 20px; 
+    border-bottom: 1px solid #dadfea;       
+}
+
+.filtel-bg input{
+    padding-left: 20px;
+    width: 35.71%;
+    height: 65.31%;
+    border: 1px solid rgba(140, 151, 178, 40);
+    background-color:  #ffffff;
+    border-radius: 10px;
+}
+
+.filter{
+    width: 50%;
+}
+
+.filter a{
+    margin-right: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color:  #8c97b2;
+    font-size: 1.2em;
+}
+
+.filter a:hover{
+    display: inline-block;    
+    color: white;
+    text-decoration: none;
+    background-color:  #97b3ce;
+    border-radius: 5px;
+}
+
+.filter-results{    /* див с книгами, получение результата на основе запроса фильтра */ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    align-content: flex-start;
+    align-items: flex-start;
+    
+    height: 87%;
+    background-color:  #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+    /****стили книг****/
+
+.book-cover{
+    border-radius: 4px;
+    background-color:  #97b3ce;
+    width: 200px;
+    height: 275px;    
+}
+
+.book-content{
+    margin: 10px 20px;    
+}
+
+.book-author{font-size: 1.2em}
+
+.book-name{font-size: 1.6em}
+
+    /* звездный рейтинг */
+
+.rating {
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    }
+    
+    .rating-item {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    /* transition: color .6s; */
+    }
+    
+    .rating-item.active,
+    .rating-item.active ~ *,
+    .rating-item:hover,
+    .rating-item:hover ~ * {
+    color: #ffab00;
+    }
+
+    /*  левая панель навигации*/
+
+.logout-panel{  /*  Общий контейнер навигации */
+    order: 1;    
+    flex-basis:15%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    align-content: space-between;
+    align-items: stretch;
+
+
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+    /* min-height: 830px;  */
+    background-color:  #1f2637;
+    /* overflow-y: auto;         */
+}
+
+.logout-panel-hr{
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color:  rgba(24, 30, 44, 0.8);
+}
+
+.add-btn{
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 15%;     
+}
+
+.btn{   /* кнопка добавления книг */
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 4px;
+    background-color:  #f2795a;
+    width: 60%;
+    height: 30%;
+    font-size: 1.4em;
+    color:  #ffffff;
+}
+
+
+
+
+.main-nav{  /* main-nav боковое меню/навигация */
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 22.22%;
+    font-size: 1.3em;
+}
+
+.main-nav .fa{font-size: 1.4em}
+
+.personal-categories{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 22.22%;
+    font-size: 1.3em;
+}
+
+.history-list{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 17.33%;
+    padding: 10px 5px;
+}
+
+.history-time{font-size: 1.2em;}
+
+.time-ago{font-size: 1.2em;}
+
+.logout-panel a { /* ссылочки бокового меню */
+font-family: ProximaNova;
+color:  #78829d;
+font-size: 1.3em;
+line-height: 26px;
+text-align: left;
+display: block;
+width: 100%;
+height: 38px;
+text-decoration: none;
+padding-left: 30%;
+}
+
+.fa-main-nav{
+    margin-right: 20px;
+}
+
+.logout-panel a:hover{
+    background-color:  #15a4fa;
+    width: 100%;
+    height: 38px;
+    color: white;
+}
+
+#personal-categories1::before{
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color:  #e64c66;
+    width: 6px;
+    height: 6px;
+}
+
+#personal-categories2::before{
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color:  #ffab00;
+    width: 6px;
+    height: 6px;
+}
+
+#personal-categories3::before{
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color:  #00bfdd;
+    width: 6px;
+    height: 6px;
+}
+
+#personal-categories4::before{
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color:  #7874cf;
+    width: 6px;
+    height: 6px;
+}
+
+[id^=history-time]{ /* история добавления книг */
+    display: block;
+    margin: 5px auto;
+    color:  #6f7d95;
+}
+
+.history-time {
+    display: block;
+    font-size: 1.2em; 
+    color:  #6f7d95;   
+}
+
+
+    /* app-footer */ 
+
+.app-footer{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    
+    background-color:  #2f364a;
+    width: 100%;
+    height: 4.5%;
+}
+
+.footer-set{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+
+    height: 100%;
+}
+
+.footer-set .fa {font-size: 1.6em}
+
+.footer-set a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    color: white;
+    text-decoration: none;
+    background-color:  #1f2637;
+    width: 55px ;
+    height: 100%;
+}
+
+.footer-set a:hover{
+    background-color:  #15a4fa;
+    color: white;
+    width: 55px ;
+    height: 100%;
+    
+}
+
+    /* Великие стили формы добавления книг */
+
+
+.addition-form{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    left: calc(50% - 250px);
+    top: calc(50% - 125px);
+    width: 500px;
+    height: 200px;
+    background-color:  #eef1f7;
+    border-top: 20px solid #2f364a;
+    border-bottom: 20px solid #2f364a;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 999;
+    box-shadow: 0 0 5px 1000px rgba(114, 114, 114, 0.5);
+
+}
+
+.addition-form input:not(.form-create-book){
+    padding-left: 20px;
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgba(140, 151, 178, 40);
+    background-color:  #ffffff;
+    border-radius: 10px;    
+    font-size: 1.3em;
+}
+
+.form-create-book{
+    width: 150px;
+    height: 40px;
+    background-color:  #f2795a;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.3em;
+    border: 0;
+} 
+
+
+
+
+
+
