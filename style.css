@@ -31,7 +31,7 @@ html, body{
 
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color:  #2f364a;
+    background-color:  #2f364a;    
     width: 100%;
     height: 4.5%;
 
@@ -45,6 +45,7 @@ html, body{
 
     height: 100%;
     flex-basis: 9%;
+    min-width: 180px;
 }
 
 .header-link a{     /* ссыллки в хедере */
@@ -95,6 +96,7 @@ html, body{
 .using-online-bg{
     height: 100%;
     flex-basis: 7%;
+    min-width: 140px;
 }
 
 .fa-chevron-circle-down{font-size: 1.3em}
@@ -177,6 +179,7 @@ html, body{
 .filtel-bg input{
     padding-left: 20px;
     width: 35.71%;
+    min-width: 130px;
     height: 65.31%;
     border: 1px solid rgba(140, 151, 178, 40);
     background-color:  #ffffff;
@@ -184,23 +187,25 @@ html, body{
 }
 
 .filter{
-    width: 50%;
+    min-width: 360px;
 }
 
-.filter a{
-    margin-right: 15px;
+.filter label{
+   /*  margin-right: 15px; */
     display: inline-block;
     text-decoration: none;
     color:  #8c97b2;
     font-size: 1.2em;
+    padding: 2.5px 6px;
 }
 
-.filter a:hover{
+.filter label:hover{
     display: inline-block;    
     color: white;
     text-decoration: none;
     background-color:  #97b3ce;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 2.5px 6px;
 }
 
 .filter-results{    /* див с книгами, получение результата на основе запроса фильтра */ 
@@ -244,8 +249,9 @@ html, body{
     }
     
     .rating-item {
+    font-size: 1.3em;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.301);
     /* transition: color .6s; */
     }
     
@@ -253,7 +259,8 @@ html, body{
     .rating-item.active ~ *,
     .rating-item:hover,
     .rating-item:hover ~ * {
-    color: #ffab00;
+    /* color: #ff0000; */
+    color: #f2795a;
     }
 
     /*  левая панель навигации*/

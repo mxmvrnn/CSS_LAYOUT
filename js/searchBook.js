@@ -10,9 +10,9 @@
 
   bookSearch.addEventListener('input', function(event){
     for (var i = 0; i < bookContent.length; i++){
-      n = bookContent[i].getElementsByClassName('book-author');
+      n = bookContent[i].getElementsByClassName('book-name');
       a[i] = n[0].innerHTML.toLowerCase();
-      if(a[i].indexOf(event.target.value) !== -1){
+      if(a[i].indexOf(event.target.value.toLowerCase()) !== -1){
         bookContent[i].style.display = "block";
       } else{
         bookContent[i].style.display = "none";
@@ -20,21 +20,4 @@
     }
   })
 
-
-    
- /* console.log(a); */
-
 }())
-
-/* for (var i = 0; i < bookContent.length; i++)
-    {
-      n = bookContent[i].getElementsByClassName('book-author');
-      a[i] = n[0].innerHTML;
-    } */
-      /* inputNode.addEventListener('bookSearch', function (event) {
-        const filteredItems = bookName.filter(function (item) {
-          return item.indexOf(event.target.value) !== -1
-        })
-        
-        listNode.innerHTML = renderListItems(filteredItems)
-      }) */
