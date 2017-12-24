@@ -1,9 +1,24 @@
+var createBook = document.getElementsByClassName('form-create-book');
+var addAuthorName = document.getElementsByClassName('form-author-name');
+var addBookName = document.getElementsByClassName('form-book-name');
+var filterResults = document.getElementsByClassName('filter-results');
+var bookContent = document.getElementsByClassName('book-content');
+var b = document.getElementById('add-form');
+var currentDate = new Date();
+function getId(){
+    for ( var i = 0 ; i < bookContent.length  ; i ++ ){
+        var createId = "book_" + i;
+        bookContent[i].id = createId;
+    }
+}
+   
+getId()
+
 function include(url) { 
     var script = document.createElement('script'); 
     script.src = url;
     document.getElementsByTagName('body')[0].appendChild(script); 
 }
-
 
 (function () { /* Всплывающее окошко при на нажатии на 'Add a Book' */
     // в этой задаче неважно, как именно прятать элемент
@@ -20,28 +35,12 @@ function include(url) {
 
 
 (function () { /* добавление книг */
-    var createBook = document.getElementsByClassName('form-create-book');
-    var addAuthorName = document.getElementsByClassName('form-author-name');
-    var addBookName = document.getElementsByClassName('form-book-name');
-    var filterResults = document.getElementsByClassName('filter-results');
-    var bookContent = document.getElementsByClassName('book-content');
-    var b = document.getElementById('add-form');
-    var currentDate = new Date();
-    function getId(){
-        for ( var i = 0 ; i < bookContent.length ; i ++ ){
-            var createId = "book_" + i;
-            bookContent[i].id = createId;
-        }
-    }
-    getId()
-
     createBook[0].onclick = function(){
 
         var dateCreation = new Date();
 
         var bookCover = document.createElement('div');
-        bookCover.className = 'book-cover';
-        getId();
+        bookCover.className = 'book-cover';        
 
         var bookName = document.createElement('div');
         bookName.className = 'book-name';
@@ -73,6 +72,7 @@ function include(url) {
         console.log(Math.round(diff / 1000) + " разница дат");
 
         include('js/createStarRating.js');
+        getId();
     }  
 
     
